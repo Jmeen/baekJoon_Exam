@@ -62,7 +62,7 @@ public class Lv1_2 {
 		Scanner sc = new Scanner(System.in);
 		int A = sc.nextInt();
 		int B = sc.nextInt();
-		
+			
 		int b_1 = Character.getNumericValue(Integer.toString(B).charAt(0));
 		int b_2 = Character.getNumericValue(Integer.toString(B).charAt(1));	
 		int b_3 = Character.getNumericValue(Integer.toString(B).charAt(2));
