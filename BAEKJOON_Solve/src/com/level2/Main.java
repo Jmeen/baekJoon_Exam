@@ -5,24 +5,14 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		//!2920
 		Scanner sc = new Scanner(System.in);
-		int H = sc.nextInt();
-		int M = sc.nextInt();
-		int modi_m;
-		int Modi_h;
+		String a = sc.next()+sc.next()+sc.next()+sc.next()+sc.next()+sc.next()+sc.next()+sc.next();
+		int b = Integer.parseInt(a);
+		System.out.println(b == 12345678? "ascending" : b==87654321 ? "descending" : "mixed");
 		
-		if ((M-45)<0) {
-			modi_m=(60+M)-45;
-			if(H-1<0) {
-				Modi_h=23;
-			}else {
-			Modi_h=H-1;
-			}
-		}else {
-			modi_m=M-45;
-			Modi_h=H;
-		}
-		System.out.println(Modi_h +" "+modi_m);	
+ 
+
 	}
 
 	private static void finEX() {
@@ -63,7 +53,7 @@ public class Main {
 //		} else {
 //			System.out.println(0);
 //		}
-		
+
 //		// iF문 사분면 고르기
 //				Scanner sc = new Scanner(System.in);
 //				int a = sc.nextInt();
@@ -87,6 +77,36 @@ public class Main {
 //				}
 //				System.out.println(r);
 
+//		Scanner sc = new Scanner(System.in);
+//		int H = sc.nextInt();
+//		int M = sc.nextInt();
+//		int modi_m;
+//		int Modi_h;
+//		
+//		if ((M-45)<0) {
+//			modi_m=(60+M)-45;
+//			if(H-1<0) {
+//				Modi_h=23;
+//			}else {
+//			Modi_h=H-1;
+//			}
+//		}else {
+//			modi_m=M-45;
+//			Modi_h=H;
+//		}
+//		System.out.println(Modi_h +" "+modi_m);	
+//	}
+//		//Q11654
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println((int)(sc.next().charAt(0)));
+//
+//		//Q2920
+//		Scanner sc = new Scanner(System.in);
+//		String a = sc.next()+sc.next()+sc.next()+sc.next()+sc.next()+sc.next()+sc.next()+sc.next();
+//		int b = Integer.parseInt(a);
+//		System.out.println(b == 12345678? "ascending" : b==87654321 ? "descending" : "mixed");
+//		
+		
 	}
 
 }
