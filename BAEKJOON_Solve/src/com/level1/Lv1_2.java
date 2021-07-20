@@ -59,18 +59,18 @@ public class Lv1_2 {
 		
 		
 		// 레벨 1 - 10
-		Scanner sc = new Scanner(System.in);
-		int A = sc.nextInt();
-		int B = sc.nextInt();
-			
-		int b_1 = Character.getNumericValue(Integer.toString(B).charAt(0));
-		int b_2 = Character.getNumericValue(Integer.toString(B).charAt(1));	
-		int b_3 = Character.getNumericValue(Integer.toString(B).charAt(2));
-
-		System.out.println(A*b_3);	
-		System.out.println(A*b_2);		
-		System.out.println(A*b_1);	
-		System.out.println(A*B);	
+//		Scanner sc = new Scanner(System.in);
+//		int A = sc.nextInt();
+//		int B = sc.nextInt();
+//			
+//		int b_1 = Character.getNumericValue(Integer.toString(B).charAt(0));
+//		int b_2 = Character.getNumericValue(Integer.toString(B).charAt(1));	
+//		int b_3 = Character.getNumericValue(Integer.toString(B).charAt(2));
+//
+//		System.out.println(A*b_3);	
+//		System.out.println(A*b_2);		
+//		System.out.println(A*b_1);	
+//		System.out.println(A*B);	
 	
 	}
 }
