@@ -6,22 +6,41 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-
+		// Q2445 별찍기 8
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-//		int n = 5;
-		int z = n;
-		int x = 2 * n - 1;
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < i; j++) {
-				System.out.print(" ");
-			}
-			for (int j = 0; j < ((2 * z) - 1); j++) {
+		int num = sc.nextInt();
+		int x = num;
+
+		for (int i = 0; i < num; i++) {
+			for (int j = 0; j <= i; j++) {
 				System.out.print("*");
 			}
+			for (int k = 1; k < 2 * x - 1; k++) {
+				System.out.print(" ");
+			}
+			for (int f = 0; f <= i; f++) {
+				System.out.print("*");
+			}
+			x--;
 			System.out.println();
-			z--;
 		}
+		int y = num - 1;
+		for (int i = 1; i < num; i++) {
+			for (int j = 0; j < y; j++) {
+				System.out.print("*");
+
+			}
+			for (int k = 0; k <= 2 * i - 1; k++) {
+				System.out.print(" ");
+			}
+			for (int j = 0; j < y; j++) {
+				System.out.print("*");
+			}
+			y--;
+			System.out.println();
+
+		}
+
 	}
 
 	private static void q2440() {
@@ -72,9 +91,10 @@ public class Main {
 			x -= 2;
 		}
 	}
-	
+
+// 별찍기 6
 	private static void q2443() {
-		
+
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 //		int n = 5;
@@ -89,6 +109,65 @@ public class Main {
 			}
 			System.out.println();
 			z--;
+		}
 	}
-	}
+
+//	//Q2444 별찍기 7
+//			Scanner sc = new Scanner(System.in);
+//			int num = sc.nextInt();
+//			for (int i = 1; i <= num; i++) {
+//				for (int j = i + 1; j <= num; j++) {
+//					System.out.print(" ");
+//				}
+//				for (int k = 0; k < (2 * i - 1); k++) {
+//					System.out.print("*");
+//				}
+//				System.out.println();
+//			}
+//			int x = num - 1;
+//			for (int i = 1; i < num; i++) {
+//				for (int j = 1; j < i + 1; j++) {
+//					System.out.print(" ");
+//				}
+//				for (int k = 0; k < (2 * x) - 1; k++) {
+//					System.out.print("*");
+//				}
+//				x--;
+//				System.out.println();
+//			}}
+//	// Q2445 별찍기 8
+//	Scanner sc = new Scanner(System.in);
+//	int num = sc.nextInt();
+//	int x = num;
+//
+//	for (int i = 0; i < num; i++) {
+//		for (int j = 0; j <= i; j++) {
+//			System.out.print("*");
+//		}
+//		for (int k = 1; k < 2 * x - 1; k++) {
+//			System.out.print(" ");
+//		}
+//		for (int f = 0; f <= i; f++) {
+//			System.out.print("*");
+//		}
+//		x--;
+//		System.out.println();
+//	}
+//	int y = num - 1;
+//	for (int i = 1; i < num; i++) {
+//		for (int j = 0; j < y; j++) {
+//			System.out.print("*");
+//
+//		}
+//		for (int k = 0; k <= 2 * i - 1; k++) {
+//			System.out.print(" ");
+//		}
+//		for (int j = 0; j < y; j++) {
+//			System.out.print("*");
+//		}
+//		y--;
+//		System.out.println();
+//
+//	}
+
 }

@@ -21,13 +21,11 @@ public class Main {
 					temp++;
 				}
 			}
-			if (temp==0) {
+			if (temp == 0) {
 				count++;
 			}
-			
 		}
 		System.out.println(count);
-
 	}
 
 	private void Finn() {
